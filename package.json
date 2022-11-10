@@ -1,0 +1,19 @@
+{
+  "name": "expo_monorepo_router_remote",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare_server": "npx -f babel --presets=@babel/preset-env,@babel/preset-react packages/greetings/index.js -o apps/server/dist/greetings.js && sed -i '' -e 's/Hi!/Hi from server!/g' apps/server/dist/greetings.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
