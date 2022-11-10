@@ -1,7 +1,6 @@
-This is an example on how to use Expo-router to retrieve remote content in a React-Native app.
+This is an example on [how to use Expo-router to retrieve remote content in a React-Native app.](https://medium.com/@dan_tamas/expo-router-and-remote-code-e49f31a33b73)
 
-    - clone the project
-
+- clone the project
 - yarn install
 - start the server with `yarn workspace server start`
 - start the app with `yarn workspace mobileapp ios`
